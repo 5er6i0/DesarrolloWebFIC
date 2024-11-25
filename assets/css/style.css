@@ -146,73 +146,22 @@ nav > ul > li:hover > .submenu {
     max-height: 350px;
     box-sizing: border-box;
 }
-
-.slider-wrapper {
-    position: relative;
+.banner {
     width: 100%;
-    max-height: 350px;;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-.slider-content {
+    height: 300px;
+    background-image: url(https://mexicogob.com/escuelas/wp-content/uploads/2022/03/AF1QipMjliYZDGLf63WL0NVybFMYnRV57hRJqVdOilow451-h240-k-no.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
-    max-height: 350px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-}
-
-.slider-box .container{
-    display: flex;
-    /* aspect-ratio: 19/6; */
-}
-
-.col-img{
-    padding: 0 12px;
-}
-
-.col-img img{
-    width: 478.22px;
-    height: 269px;
-}
-
-.col-cont {
-    padding: 0 12px;
-}
-
-.col-cont p {
-    display: block;
-    width: 500px;
-    max-width: 40%;
-}
-
-.slider-indicators {
-    display: flex;
-    position: absolute;
-    column-gap: 12px;;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 15%;
-    z-index: 1;
-}
-
-.slider-indicators a {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #1d71b8;
-}
-
-.slider-indicators a:hover {
-    background-color: #003595;
-}
-
-/* .active {
-    display: block;
-} */
-
-
+    justify-content: center;
+    align-items: center;
+    color: #1d71b8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .banner h1 {
+    font-size: 48px;
+    text-align: center;
+  }
 
 /*=====Estilo apartado tarjetas=====*/
 .section-header {
