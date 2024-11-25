@@ -74,6 +74,7 @@ header {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 24px;
     text-align: right;
+    
     color: white;
 }
 
@@ -149,7 +150,7 @@ nav > ul > li:hover > .submenu {
 .banner {
     width: 100%;
     height: 300px;
-    background-image: url(https://mexicogob.com/escuelas/wp-content/uploads/2022/03/AF1QipMjliYZDGLf63WL0NVybFMYnRV57hRJqVdOilow451-h240-k-no.jpg);
+    background-image: url('https://www.uas.edu.mx/multimedia/galerias/2021/09/grande_234852001630970293.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -246,7 +247,7 @@ nav > ul > li:hover > .submenu {
 }
 /*=====Estilo apartado footer=====*/
 footer {
-    background-color: #c49e0d;
+    background-image: linear-gradient(90deg, #ad9716 20%, #d1b648 80%);
     padding: 0;
     position: relative;
     width: 100%;
@@ -273,6 +274,11 @@ footer {
     font-family: "Roboto Condensed", sans-serif;
     text-align: center;
     color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 5px;
+    padding: 20px;
+    font-weight: 100;
   }
   
 
