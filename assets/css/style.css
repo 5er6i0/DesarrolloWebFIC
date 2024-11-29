@@ -51,15 +51,24 @@ header {
 .logoUAS, .logoFacultad{
     display: flex;
     align-items: center;
+    margin-right: 100px;
+
 
 }
 .logoUAS img, .logoFacultad img{
-    width: 200px;
+    width: auto;
     height: 140px;
     margin-right: 0;
     object-fit: contain;
     margin: 0;
     padding: 0;
+
+}
+.logoUAS img{
+    margin-left: 120px;
+}
+.logoFacultad{
+    margin-right: 120px;
 }
 .NombreUAS{
     background: linear-gradient(-90deg,#1d71b8,#003595);
@@ -68,8 +77,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    text-align: justify;
     height: 30px;
+    letter-spacing: 15px;
 }
 .NombreUAS h4{
     font-family: "Roboto Condensed", sans-serif;
