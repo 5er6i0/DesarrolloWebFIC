@@ -51,15 +51,24 @@ header {
 .logoUAS, .logoFacultad{
     display: flex;
     align-items: center;
+    margin-right: 100px;
+
 
 }
 .logoUAS img, .logoFacultad img{
-    width: 200px;
+    width: auto;
     height: 140px;
     margin-right: 0;
     object-fit: contain;
     margin: 0;
     padding: 0;
+
+}
+.logoUAS img{
+    margin-left: 120px;
+}
+.logoFacultad{
+    margin-right: 120px;
 }
 .NombreUAS{
     background: linear-gradient(-90deg,#1d71b8,#003595);
@@ -68,8 +77,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    text-align: justify;
     height: 30px;
+    letter-spacing: 15px;
 }
 .NombreUAS h4{
     font-family: "Roboto Condensed", sans-serif;
@@ -407,6 +416,71 @@ a{
 }
 .tarjeta button:hover {
     background:#c49e0d;
+}
+
+/*=====Noticias, Servicios y Alumnos=====*/
+.contenedor-principal-pestanas {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Pestanas arriba y contenido abajo */
+    max-width: 1200px;
+    position: relative;
+    padding-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.contenedor-pestanas {
+    display: flex; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd; /* Linea divisoria con el contenido */
+}
+
+.pestana {
+    display: none; /* Oculta los botones de la seleccion de la pestana */
+}
+
+.pestana + label {
+    cursor: pointer;
+    flex-grow: 1; /* Distribuye uniformemente las pestanas */
+    text-align: center;
+    padding: 15px 0;
+    background-color: #123392;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-right: 1px solid #ddd; /* Separador entre pestanas */
+    transition: background-color 0.3s ease;
+}
+
+.pestana + label:last-of-type {
+    border-right: none; /* Elimina el borde de la ultima pestana */
+}
+
+.pestana + label:hover {
+    background-color: #c49e0d;
+}
+
+.pestana:checked + label {
+    background-color: #c49e0d; /* Fondo dorado para la pestana activa */
+    color: white;
+}
+
+.contenido-pestana {
+    display: none; /* Oculta el contenido por defecto */
+    padding: 20px;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+.pestana:checked + label + .contenido-pestana {
+    display: block; /* Deberia mostrar el contenido activo NO FUNCIONA*/
 }
 
 /*=====Estilo apartado certificaciones=====*/

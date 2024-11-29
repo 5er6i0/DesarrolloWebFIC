@@ -372,6 +372,37 @@
         </div>
     </section>
 
+        <!-- Seccion Noticias, Servicios y Alumnos -->
+        <div class="contenedor-principal-pestanas">
+            <!-- Pestañas -->
+            <div class="contenedor-pestanas">
+              <input type="radio" id="pestana1" name="grupo-pestanas" class="pestana" checked>
+              <label for="pestana1">Noticias</label>
+          
+              <input type="radio" id="pestana2" name="grupo-pestanas" class="pestana">
+              <label for="pestana2">Servicios Académicos</label>
+          
+              <input type="radio" id="pestana3" name="grupo-pestanas" class="pestana">
+              <label for="pestana3">Alumnos</label>
+            </div>
+          
+            <!-- Contenido de las pestañas -->
+            <div class="container">
+              <div class="contenido-pestana" id="contenido1">
+                <h3>Sección de Noticias</h3>
+                <p>Este es el contenido de la sección de noticias...</p>
+              </div>
+              <div class="contenido-pestana" id="contenido2">
+                <h3>Sección de Servicios Académicos</h3>
+                <p>Este es el contenido de la sección de servicios académicos...</p>
+              </div>
+              <div class="contenido-pestana" id="contenido3">
+                <h3>Sección de Alumnos</h3>
+                <p>Este es el contenido de la sección de alumnos...</p>
+              </div>
+            </div>
+          </div>          
+
         <!-- Sección de Certificaciones -->
     <section class="certificaciones">
         <h2>Certificaciones</h2>
@@ -399,6 +430,24 @@
 
 
         <!-- Termina seccion footer-->
+
+        <script>
+            function openTab(evt, tabName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(tabName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+          </script>
+          
+
 </body>
 
 </html>
