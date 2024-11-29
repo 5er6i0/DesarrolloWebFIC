@@ -150,29 +150,51 @@ nav > ul > li:hover > .submenu {
 
 /*=====Estilo apartado SLIDER=====*/
 
-.contentItemsCarrusel{
-    max-height: 300px;
-    height: 300px;
-    width: 100%;
+.contenedor {
     overflow: hidden;
+    background-color: #e6ebf7;
 }
 
-.itemCarrusel{
-    height: 100%;
+.contentItemsCarrusel{
+    display: flex;
+    max-height: 320px;
+    height: 320px;
+    width: 100%;
+    overflow: hidden;
     position: relative;
 }
 
+.contentItemsCarrusel input {
+    display: none;
+}
+
+.itemCarrusel{
+    display: none;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    height: 93.75%;
+    position: relative;
+    margin-top: 8px;
+}
+
 .tarjetaCarrusel{
-    background-color: #e6ebf7;
     height: 100%;
     padding: 2px;
-    z-index: 1;
+}
+
+.slider-box {
+    display: flex;
+    height: 100%;
 }
 
 .slider-box .container{
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    padding: 0;
+    background-color: #e6ebf7;
+    height: 100%;
+    z-index: 1;
 }
 
 .col-img{
@@ -185,21 +207,19 @@ nav > ul > li:hover > .submenu {
 }
 
 .col-cont {
-    z-index: 1;
     padding: 0 12px;
-
 }
 
 .col-cont p {
-    z-index: 1;
     display: block;
     width: 500px;
     max-width: 40%;
 }
 
-.flechasCarrusel{
+.flechasCarrusel {
     position: absolute;
     top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     display: flex;
@@ -208,37 +228,123 @@ nav > ul > li:hover > .submenu {
     padding: 10px;
 }
 
+.flechasCarrusel > label {
+    z-index: 2;
+    display: none;
+}
+
 a{
     text-decoration: none;
 }
 
 i {
-    font-size: 30px;
-    color: #c49e0d;
+    font-size: 20px;
+    color: white;
+    background-color: #c49e0d;
+    border: 6px solid #c49e0d;
+    border-top-width: 13px;
+    border-bottom-width: 13px;
+}
+
+label > .fa-chevron-left {
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+    z-index: 2;
+}
+label > .fa-chevron-right {
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
 }
 
 .slider-indicators{
+    position: absolute;
     display: flex;
     justify-content: center;
     column-gap: 12px;
     max-height: 10%;
-    max-width: 90%;
-    margin: 10px auto;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
 }
 
 a{
     text-decoration: none;
 }
 
-.slider-indicators > a {
-    width: 15px;
-    height: 15px;
+.slider-indicators > label {
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: #1d71b8;
+    transition: all 0.25s ease;
 }
 
-.slider-indicators > a:hover{
+.slider-indicators > label:hover{
     background-color: #003595;
+}
+
+#op1:checked ~ #itemCarrusel-1 {
+    display: block;
+}
+#op1:checked ~ .flechasCarrusel > .left-1, #op1:checked ~ .flechasCarrusel > .right-1 {
+    display: block;
+}
+#op1:checked ~ .slider-indicators > :nth-child(1) {
+    background-color: #c49e0d;
+}
+
+#op2:checked ~ #itemCarrusel-2 {
+    display: block;
+}
+#op2:checked ~ .flechasCarrusel > .left-2, #op2:checked ~ .flechasCarrusel > .right-2 {
+    display: block;
+}
+#op2:checked ~ .slider-indicators > :nth-child(2) {
+    background-color: #c49e0d;
+}
+
+#op3:checked ~ #itemCarrusel-3 {
+    display: block;
+}
+#op3:checked ~ .flechasCarrusel > .left-3, #op3:checked ~ .flechasCarrusel > .right-3 {
+    display: block;
+}
+#op3:checked ~ .slider-indicators > :nth-child(3) {
+    background-color: #c49e0d;
+}
+
+#op4:checked ~ #itemCarrusel-4 {
+    display: block;
+}
+#op4:checked ~ .flechasCarrusel > .left-4, #op4:checked ~ .flechasCarrusel > .right-4 {
+    display: block;
+}
+#op4:checked ~ .slider-indicators > :nth-child(4) {
+    background-color: #c49e0d;
+}
+
+#op5:checked ~ #itemCarrusel-5 {
+    display: block;
+}
+#op5:checked ~ .flechasCarrusel > .left-5, #op5:checked ~ .flechasCarrusel > .right-5 {
+    display: block;
+}
+#op5:checked ~ .slider-indicators > :nth-child(5) {
+    background-color: #c49e0d;
+}
+
+#op6:checked ~ #itemCarrusel-6 {
+    display: block;
+}
+#op6:checked ~ .flechasCarrusel > .left-6, #op6:checked ~ .flechasCarrusel > .right-6 {
+    display: block;
+}
+#op6:checked ~ .slider-indicators > :nth-child(6) {
+    background-color: #c49e0d;
 }
 
 /*=====Estilo apartado tarjetas=====*/
