@@ -641,4 +641,15 @@ footer {
         align-items:center;
         padding: 0 0px;
     }
+    .menuIcon{
+        height: 42px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        cursor: pointer;
+    }
+    .menuIcon:hover{
+        opacity: .7;
+    }
 }
