@@ -494,6 +494,10 @@ a{
     display: block;
 }
 
+ul.s{
+    list-style-type: square;
+}
+
 /*=====Estilo apartado certificaciones=====*/
 .certificaciones {
     display: flex;
