@@ -543,7 +543,6 @@ a{
     }
 }
 
-
 /*=====Noticias, Servicios y Alumnos=====*/
 .contenedor-principal-pestanas {
     width: auto;
@@ -568,7 +567,6 @@ a{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 
 .pestana {
     display: none; /* Oculta los botones de la seleccion de la pestana */
@@ -613,26 +611,49 @@ a{
     display: block;
 }
 
+/* Contenedor de imagen y texto */
 .contenedor-imagen-texto {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 20px;
-    
+    flex-direction: row; 
 }
 
+/* Imagen dentro del contenedor */
 .contenedor-imagen-texto img {
     max-width: 300px;
     max-height: auto;
-    float: left;
+    display: block;
 }
 
+/* Texto dentro del contenedor */
 .contenedor-imagen-texto .text {
-    padding-left: 20px ;
-    padding-top: 20 px;
-    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: left;
 }
+
+/* Responsivo Noticias, servicios y alumnos */
+@media (max-width: 768px) {
+    .contenedor-imagen-texto {
+        flex-direction: column; /* Cambiar a columna: imagen arriba, texto abajo */
+        text-align: center;
+    }
+
+    .contenedor-imagen-texto img {
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .contenedor-imagen-texto .text {
+        padding-left: 0;
+        padding-top: 0;
+        text-align: center;
+    }
+}
+
 
 /*=====Estilo apartado certificaciones=====*/
 .certificaciones {
