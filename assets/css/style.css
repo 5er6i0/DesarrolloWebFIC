@@ -819,6 +819,9 @@ footer {
         padding: 0;
         cursor: pointer;
     }
+    .menuIcon:hover{
+        opacity: 70%;
+    }
     .headerCheckbox{
         display: none;
     }
