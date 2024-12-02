@@ -50,7 +50,7 @@ header {
 }
 
 /*=====Estilo de logos y facultad=====*/
-.headerMovil{
+.headerMovil, .headerNav{
     display: none;
 }
 .logoUAS, .logoFacultad{
@@ -482,10 +482,6 @@ a{
 /*=====Responsivo tarejas=====*/
 /* Para moviles */
 @media (max-width: 480px) {
-    .NombreFacultad {
-        font-size: 18px;
-        text-align: center;
-    }
 
     .menuIcon img {
         width: 30px;
@@ -523,10 +519,7 @@ a{
         align-items: center;
     }
 
-    .logoUAS img, .logoFacultad img {
-        max-width: 80%;
-        height: auto;
-    }
+
 
     .navMenu a {
         font-size: 14px;
@@ -738,9 +731,10 @@ footer {
 
 /*=====Estilo responsivo para header=====*/
 @media (max-width: 720px){
-    header, .NombreUAS, nav{
+    header, .NombreUAS, nav, .navMenu{
         display: none;
     }
+
     .headerMovil {
         height: 328px;
         max-width: 100%;
@@ -828,15 +822,20 @@ footer {
     .headerCheckbox{
         display: none;
     }
-    .navMenu{
+    .headerNav{
         display: none;
         background-color: #b89d2b;
         padding: 10px;
+        height: 600px;
         text-align: center;
-        position: relative;
-        bottom: 20%;
-        left: 0;
-        right: 0;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        top: 320px;
+        flex-direction: column;
+        z-index: 100;
+        font-size: 2rem;
+        overflow: hidden;
     }
     .headerCheckbox:checked ~ .headerNav{
         display: flex;
@@ -844,14 +843,10 @@ footer {
     .header input[type="checkbox"]{
         display: none;
     }
-    .ulmenu{
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-    }
-    .limenu{
+    .ulmenu-button{
         display: flex;
         list-style: none;
+        transition: all .3s;
     }
 }
 
