@@ -489,17 +489,21 @@ a{
     padding-bottom: 20px;
     background-color: #fff;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .contenedor-pestanas {
-    width: 1200px;
-    max-width: 100%; 
+    width: 100%;
+    max-width: auto;
+    margin: 0 auto;
     display: flex; 
     list-style: none;
-    margin: 0;
     padding: 0;
     background-color: #fff;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
 
 .pestana {
     display: none; /* Oculta los botones de la seleccion de la pestana */
@@ -544,6 +548,26 @@ a{
     display: block;
 }
 
+.contenedor-imagen-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    
+}
+
+.contenedor-imagen-texto img {
+    max-width: 300px;
+    max-height: auto;
+    float: left;
+}
+
+.contenedor-imagen-texto .text {
+    padding-left: 20px ;
+    padding-top: 20 px;
+    float: left;
+}
 
 /*=====Estilo apartado certificaciones=====*/
 .certificaciones {
