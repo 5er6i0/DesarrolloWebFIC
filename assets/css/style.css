@@ -28,7 +28,7 @@ body {
     color: #333;
 }
 .container {
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -40,6 +40,7 @@ header {
     padding: 0;
     background: linear-gradient(90deg,#1d71b8,#003595);
     color: white;
+    width: 100%;
 }
 .line {
     border-top: 4px solid #b89d2b;
@@ -190,8 +191,8 @@ nav > ul > li:hover > .submenu {
 
 .itemCarrusel{
     display: none;
-    flex-shrink: 0;
     flex-basis: 100%;
+    width: 100%;
     height: 93.75%;
     position: relative;
     margin-top: 8px;
@@ -214,26 +215,31 @@ nav > ul > li:hover > .submenu {
     padding: 0;
     background-color: #e6ebf7;
     height: 100%;
+    width: 100%;
+    max-width: 1080px;
     z-index: 1;
 }
 
 .col-img{
     padding: 0 12px;
+    max-width: 478.22px;
 }
 
 .col-img img{
-    width: 478.22px;
-    height: 269px;
+    aspect-ratio: auto 1200/628;
+    max-width: 100%;
+    max-height: 269px;
+    /* height: auto; */
 }
 
 .col-cont {
+    display: flex;
+    flex-direction: column;
     padding: 0 12px;
 }
 
 .col-cont p {
     display: block;
-    width: 500px;
-    max-width: 40%;
 }
 
 .flechasCarrusel {
@@ -253,11 +259,7 @@ nav > ul > li:hover > .submenu {
     display: none;
 }
 
-a{
-    text-decoration: none;
-}
-
-i {
+label > i {
     font-size: 20px;
     color: white;
     background-color: #c49e0d;
@@ -433,8 +435,8 @@ a{
 .contenedor-principal-pestanas {
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    max-width: 1200px;
+    flex-direction: column; /* Pestanas arriba y contenido abajo */
+    max-width: 1080px;
     position: relative;
     padding-bottom: 20px;
     border: 1px solid #ddd;
@@ -494,6 +496,10 @@ a{
     display: block;
 }
 
+ul.s{
+    list-style-type: square;
+}
+
 /*=====Estilo apartado certificaciones=====*/
 .certificaciones {
     display: flex;
@@ -505,6 +511,12 @@ a{
     background-color: #123392;
     color: white;
 }
+
+.video {
+    width: 100%;
+    max-width: 1080px;
+}
+
 .certificaciones h2 {
     font-size: 2rem;
     margin: 0;
@@ -560,6 +572,16 @@ footer {
 
 /*=====Estilo responsivo header=====*/
 
+@media (max-width:1030px) {
+    .col-img {
+        display: none;
+    }
+    .col-cont{
+        width: 636px;
+    }
+}
+
+/*=====Estilo responsivo para header=====*/
 @media (max-width: 720px){
     header, .NombreUAS, nav{
         display: none;
@@ -677,5 +699,16 @@ footer {
     .limenu{
         display: flex;
         list-style: none;
+    }
+}
+
+@media (max-width:700px) {
+    .col-cont{
+        width: 90%;
+    }
+
+    label > i {
+        /* display: none; */
+        font-size: 15px;
     }
 }
