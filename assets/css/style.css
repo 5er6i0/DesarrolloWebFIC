@@ -417,7 +417,7 @@ a{
     background-color: #c49e0d;
 }
 
-/*=====Estilo apartado tarjetas=====*/
+/=====Estilo apartado tarjetas=====/
 .section-header {
     display: flex;
     flex-direction: column;
@@ -439,6 +439,7 @@ a{
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .tarjeta {
     background: white;
@@ -447,14 +448,15 @@ a{
     max-height: 450px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    /* justify-content: space-between; */
     padding: 20px;
     flex: 1;
+    overflow: hidden; /Evita que el texto se desborde/
 }
+
 .tarjeta img {
     width: 100%;
-    height: 40%;
-    object-fit: fill;
+    max-height: 200px;
+    object-fit: cover; 
     border-radius: 8px;
     margin-bottom: 10px;
 }
@@ -462,10 +464,17 @@ a{
     font-size: 1.2rem;
     margin: auto 0;
 }
+
 .tarjeta p {
     font-size: 0.9rem;
     color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis; /agrega .../
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /numero de líneas/
+    -webkit-box-orient: vertical;
 }
+
 .tarjeta button {
     margin-top: 0;
     padding: 10px 20px;
@@ -479,6 +488,20 @@ a{
     background:#c49e0d;
 }
 
+/=====Responsivo tarejas=====/
+@media (max-width: 1024px) {
+    .tarjeta {
+        max-width: 48%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .tarjeta {
+        max-width: 100%;
+        height: auto;
+    }
+}
 /*=====Responsivo tarejas=====*/
 /* Para moviles */
 @media (max-width: 480px) {
