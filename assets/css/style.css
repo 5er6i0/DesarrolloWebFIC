@@ -479,6 +479,71 @@ a{
     background:#c49e0d;
 }
 
+/*=====Responsivo tarejas=====*/
+/* Para moviles */
+@media (max-width: 480px) {
+    .NombreFacultad {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .menuIcon img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navMenu {
+        flex-direction: column;
+    }
+
+    .navMenu a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .tarjeta img {
+        width: 100%;
+        height: auto;
+    }
+
+    .tarjeta p {
+        font-size: 14px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*Responsivo tarjetas tablets*/
+@media (max-width: 768px) {
+    header, .navMenu, .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoUAS img, .logoFacultad img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .navMenu a {
+        font-size: 14px;
+    }
+
+    .fila {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tarjeta {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
 /*=====Noticias, Servicios y Alumnos=====*/
 .contenedor-principal-pestanas {
     width: auto;
