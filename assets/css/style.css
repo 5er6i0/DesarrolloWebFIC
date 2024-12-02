@@ -86,7 +86,7 @@ header {
     justify-content: space-around;
     align-items: center;
     height: 30px;
-    letter-spacing: 13px;
+    letter-spacing: 10px;
 }
 .NombreUAS h4{
     font-family: "Roboto Condensed", sans-serif;
@@ -94,14 +94,14 @@ header {
     padding: 0;
     color: #B8C7E6;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 250;
 }
 .NombreFacultad {
     position: absolute;
     margin: auto;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 24px;
-    left: 25%;
+    left: 26%;
     text-align: right;
     color: white;
     z-index: 20;
@@ -697,7 +697,7 @@ footer {
 }
 
 /*=====Estilo responsivo para header=====*/
-@media (max-width: 720px){
+@media (max-width: 1024px){
     header, .NombreUAS, nav, .navMenu{
         display: none;
     }
