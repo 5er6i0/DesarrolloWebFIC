@@ -819,7 +819,7 @@ footer {
         padding: 0;
         cursor: pointer;
     }
-    .menuIcon:hover{
+    .menuIcon img:hover{
         opacity: 70%;
     }
     .headerCheckbox{
