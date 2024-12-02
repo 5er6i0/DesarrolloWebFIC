@@ -417,7 +417,7 @@ a{
     background-color: #c49e0d;
 }
 
-/=====Estilo apartado tarjetas=====/
+/*=====Estilo apartado tarjetas=====*/
 .section-header {
     display: flex;
     flex-direction: column;
@@ -450,7 +450,7 @@ a{
     text-align: center;
     padding: 20px;
     flex: 1;
-    overflow: hidden; /Evita que el texto se desborde/
+    overflow: hidden; /*Evita que el texto se desborde*/
 }
 
 .tarjeta img {
@@ -469,9 +469,9 @@ a{
     font-size: 0.9rem;
     color: #666;
     overflow: hidden;
-    text-overflow: ellipsis; /agrega .../
+    text-overflow: ellipsis; /*agrega ...*/
     display: -webkit-box;
-    -webkit-line-clamp: 3; /numero de líneas/
+    -webkit-line-clamp: 3; /*numero de líneas*/
     -webkit-box-orient: vertical;
 }
 
@@ -488,7 +488,7 @@ a{
     background:#c49e0d;
 }
 
-/=====Responsivo tarejas=====/
+/*=====Responsivo tarejas=====*/
 @media (max-width: 1024px) {
     .tarjeta {
         max-width: 48%;
@@ -501,62 +501,6 @@ a{
         max-width: 100%;
         height: auto;
     }
-}
-/*=====Responsivo tarejas=====*/
-/* Para moviles */
-@media (max-width: 480px) {
-
-    .menuIcon img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .navMenu {
-        flex-direction: column;
-    }
-
-    .navMenu a {
-        padding: 10px;
-        text-align: center;
-    }
-
-    .tarjeta img {
-        width: 100%;
-        height: auto;
-    }
-
-    .tarjeta p {
-        font-size: 14px;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-/*Responsivo tarjetas tablets*/
-@media (max-width: 768px) {
-    header, .navMenu, .contenedor {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-
-    .navMenu a {
-        font-size: 14px;
-    }
-
-    .fila {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .tarjeta {
-        width: 80%;
-        margin-bottom: 20px;
-    }
 }
 
 /*=====Noticias, Servicios y Alumnos=====*/
