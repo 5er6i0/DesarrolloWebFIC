@@ -558,13 +558,12 @@ footer {
     font-weight: 100;
 }
 
-/*=====Estilo responsivo para header=====*/
+/*=====Estilo responsivo header=====*/
 
 @media (max-width: 720px){
     header, .NombreUAS, nav{
         display: none;
     }
-
     .headerMovil {
         height: 328px;
         display: flex;
@@ -577,7 +576,6 @@ footer {
         height: 20%;
         width: 100%;
         background-color: #b89d2b;
-
     }
     .linea2{
         display: flex;
@@ -605,7 +603,7 @@ footer {
     }
     .linea2{
         height: 15%;
-        background: linear-gradient(to right, #1d71b8, #003595);
+        background: linear-gradient(to right, #003595, #1d71b8);
         display: flex;
         justify-content: center;
         align-items: flex-end;
@@ -614,7 +612,7 @@ footer {
     .linea3{
         height: 40%;
         width: 100%;
-        background: linear-gradient(to right, #1d71b8, #003595);
+        background: linear-gradient(to right, #003595, #1d71b8);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -628,20 +626,20 @@ footer {
         align-content: center;
     }
     .nombreFacultad h1{
-        font-size: 1.8em;
+        font-size: 2em;
         margin-right: auto;
         font-weight: normal;
     }
     .linea4{
         height: 25%;
         width: 100%;
-        background: linear-gradient(to right, #1d71b8, #003595);
+        background: linear-gradient(to right, #003595, #1d71b8);
         display: flex;
         justify-content: center;
         align-items:center;
         padding: 0 0px;
     }
-    .menuIcon{
+    .menuIcon img{
         height: 42px;
         width: auto;
         display: flex;
@@ -651,5 +649,33 @@ footer {
     }
     .menuIcon:hover{
         opacity: .7;
+    }
+    .headerCheckbox{
+        display: none;
+    }
+    .navMenu{
+        display: none;
+        background-color: #b89d2b;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        bottom: 20%;
+        left: 0;
+        right: 0;
+    }
+    .headerCheckbox:checked ~ .navMenu{
+        display: flex;
+    }
+    .header input[type="checkbox"]{
+        display: none;
+    }
+    .ulmenu{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    .limenu{
+        display: flex;
+        list-style: none;
     }
 }
