@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- IMPORTANTE: aqui inicia el texto del archivo css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- IMPORTANTE: Hasta aqui debera llegar la hoja de estilos -->
      
     <script src="https://kit.fontawesome.com/d5de3298c3.js" crossorigin="anonymous"></script>
@@ -22,13 +22,13 @@
 <body>
     <!-- Seccion de menu y encabezado-->
     <header>
-        <div class="logoUAS">
-            <img src="assets/media/Logos/CuadroconFondoUAS.png" alt="Logo Universidad Autonoma de Sinaloa">
+        <div class="logoUAS" id="Arriba">
+            <img src="./assets/media/Logos/CuadroconFondoUAS.png" alt="Logo Universidad Autonoma de Sinaloa">
             <span class="NombreFacultad">FACULTAD DE CIENCIAS <br>DE LA TIERRA Y EL ESPACIO</span>
         </div>
         <div class="logoFacultad">
-            <img src="assets/media/Logos/CuadroconFondoFACITE.png" alt="Logo FACITE">
-            <img class="logoVision" src="assets/media/Logos/CuadroconFondo2025(Amarillo).png" alt="Logo UAS Vision">
+            <img src="./assets/media/Logos/CuadroconFondoFACITE.png" alt="Logo FACITE">
+            <img class="logoVision" src="./assets/media/Logos/CuadroconFondo2025(Amarillo).png" alt="Logo UAS Vision">
         </div>
     </header>
     <div class="NombreUAS">
@@ -41,9 +41,9 @@
         </div>
         <div class="linea2">
             <div class="logosGrupo">
-                <img src="assets/media/Logos/CuadroconFondoUAS.png" alt="Logo Universidad Autonoma de Sinaloa">
-                <img src="assets/media/Logos/CuadroconFondo2025(Amarillo).png" alt="Logo UAS Vision">
-                <img src="assets/media/Logos/CuadroconFondoFACITE.png" alt="Logo FACITE">
+                <img src="./assets/media/Logos/CuadroconFondoUAS.png" alt="Logo Universidad Autonoma de Sinaloa">
+                <img src="./assets/media/Logos/CuadroconFondo2025(Amarillo).png" alt="Logo UAS Vision">
+                <img src="./assets/media/Logos/CuadroconFondoFACITE.png" alt="Logo FACITE">
             </div>
         </div>
         <div class="linea3">
@@ -56,8 +56,71 @@
             <div class="menuIcon">
                 <input type="checkbox" class="headerCheckbox" id="openMenu">
                 <label for="openMenu" class="header-open-nav-button" role="button">
-                    <img src="assets/media/imagenes/menuIcon.png" alt="Menú">
+                    <img src="./assets/media/imagenes/menuIcon.png" alt="Menú">
                 </label>
+                <nav class="headerNav">
+                    <a href="#">Inicio</a>
+                    <ul class="ulmenu">
+                        <li class="limenu">
+                            <a href="#">Facultad</a>
+                            <ul class="submenu">
+                                <li><a href="#">Misión</a></li>
+                                <li><a href="#">Visión</a></li>
+                                <li><a href="#">Directorio</a></li>
+                                <li><a href="#">Organigrama</a></li>
+                                <li><a href="#">Consejo Técnico</a></li>
+                                <li><a href="#">Normatividad</a></li>
+                                <li><a href="#">Planta Docente</a></li>
+                                <li><a href="#">Infraestructura</a></li>
+                                <li><a href="#">Servicio Social</a></li>
+                                <li><a href="#">Prácticas Profesionales</a></li>
+                                <li><a href="#">Informe de Labores</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="ulmenu">
+                        <li class="limenu">
+                            <a href="#">Investigación</a>
+                            <ul class="submenu">
+                                <li><a href="#">Cuerpo Académico</a></li>
+                                <li><a href="#">Proyectos</a></li>
+                                <li><a href="#">Publicaciones</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="ulmenu">
+                        <li class="limenu">
+                            <a href="#">Vinculación</a>
+                            <ul class="submenu">
+                                <li><a href="#">Nacional</a></li>
+                                <li><a href="#">Internacional</a></li>
+                                <li><a href="#">Becas</a></li>
+                                <li><a href="#">Escuelas Afines</a></li>
+                                <li><a href="#">Observatorio Infotecnológico</a></li>
+                                <li><a href="#">Encuestas Empleadores</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="ulmenu">
+                        <li class="limenu">
+                            <a href="#">Egresados</a>
+                            <ul class="submenu">
+                                <li><a href="#">Encuestas Egresados</a></li>
+                                <li><a href="#">Proceso de Titulación</a></li>
+                                <li><a href="#">Formatos y Solicitudes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="ulmenu">
+                        <li class="limenu">
+                            <a href="#">Oferta Educativa</a>
+                            <ul class="submenu">
+                                <li><a href="#">Postgrados</a></li>
+                                <li><a href="#">Licenciaturas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     <!-- Aquí termina el botón de menú para header responsivo -->
@@ -145,7 +208,7 @@
                     <div class="slider-box">
                         <div class="container">
                             <div class="col-img">
-                                <img src="assets/media/imagenes/PLANTILLA-CONVOCATORIAS-2023-1.png" alt="Bienvenida Ciclo Escolar 2025-2025 UAS" >
+                                <img src="./assets/media/imagenes/PLANTILLA-CONVOCATORIAS-2023-1.png" alt="Bienvenida Ciclo Escolar 2025-2025 UAS" >
                             </div>
                             <div class="col-cont">
                                 <h2 class="azul">PROGRAMACIÓN DE HORARIOS CICLO 2024-2025</h2>
@@ -169,7 +232,7 @@
                     <div class="slider-box">
                         <div class="container">
                             <div class="col-img">
-                                <img src="assets/media/imagenes/PLANTILLA_CONVOCATORIAS-guia-scaled.jpg" alt="GUIA DE INSCRIPCIÓN Y REINSCRIPCIÓN" sizes="(max-height: 350px) 100vw, 350px">
+                                <img src="./assets/media/imagenes/PLANTILLA_CONVOCATORIAS-guia-scaled.jpg" alt="GUIA DE INSCRIPCIÓN Y REINSCRIPCIÓN" sizes="(max-height: 350px) 100vw, 350px">
                             </div>
                             <div class="col-cont">
                                 <h2 class="azul">GUÍAS DE INSCRIPCIÓN</h2>
@@ -193,7 +256,7 @@
                     <div class="slider-box">
                         <div class="container">
                             <div class="col-img">
-                                <img src="assets/media/imagenes/PLANTILLA_CONVOCATORIAS-13-educativo.jpg" alt="PROGRAMAS EDUCATIVOS">
+                                <img src="./assets/media/imagenes/PLANTILLA_CONVOCATORIAS-13-educativo.jpg" alt="PROGRAMAS EDUCATIVOS">
                             </div>
                             <div class="col-cont">
                                 <h2 class="azul">PROGRAMAS EDUCATIVOS</h2>
@@ -217,7 +280,7 @@
                     <div class="slider-box">
                         <div class="container">
                             <div class="col-img">
-                                <img src="assets/media/imagenes/PLANTILLA_CONVOCATORIAS-guia-pago-santander-scaled.jpg" alt="GUIA DE PAGO EN SANTANDER" sizes="(max-height: 350px) 100vw, 350px">
+                                <img src="./assets/media/imagenes/PLANTILLA_CONVOCATORIAS-guia-pago-santander-scaled.jpg" alt="GUIA DE PAGO EN SANTANDER" sizes="(max-height: 350px) 100vw, 350px">
                             </div>
                             <div class="col-cont">
                                 <h2 class="azul">GUÍA DE PAGO EN SANTANDER</h2>
@@ -241,7 +304,7 @@
                     <div class="slider-box">
                         <div class="container">
                             <div class="col-img">
-                                <img src="assets/media/imagenes/CONVOCATORIA_GUIA.jpg" alt="GUIA DE PREINSCRIPCIÓN">
+                                <img src="./assets/media/imagenes/CONVOCATORIA_GUIA.jpg" alt="GUIA DE PREINSCRIPCIÓN">
                             </div>
                             <div class="col-cont">
                                 <h2 class="azul">GUÍA DE PREINSCRIPCIÓN</h2>
@@ -265,7 +328,7 @@
                     <div class="slider-box">
                         <div class="container">
                             <div class="col-img">
-                                <img src="assets/media/imagenes/PLANTILLA_CONVOCATORIAS-16-ASESORESPAR.jpg" alt="CONVOCATORIA ASESOR PAR" sizes="(max-height: 350px) 100vw, 350px">
+                                <img src="./assets/media/imagenes/PLANTILLA_CONVOCATORIAS-16-ASESORESPAR.jpg" alt="CONVOCATORIA ASESOR PAR" sizes="(max-height: 350px) 100vw, 350px">
                             </div>
                             <div class="col-cont">
                                 <h2 class="azul">CONVOCATORIA DE ASESORES PAR</h2>
@@ -352,19 +415,19 @@
         </div>
         <div class="fila">
             <div class="tarjeta">
-                <img src="assets/media/imagenes/astronomia.jpg" alt="Licencitura 1"> <!-- Astronomía -->
+                <img src="./assets/media/imagenes/astronomia.jpg" alt="Licencitura 1"> <!-- Astronomía -->
                 <h3>Licenciatura en Astronomía</h3>
                 <p>El programa en Astronomía fortalece la comunidad científica del país y ofrece a los jóvenes oportunidades en educación y desarrollo profesional en ciencias. Únete a la licenciatura en astronomía y descubre todo tu potencial...</p>
                 <button>Leer más</button>
             </div>
             <div class="tarjeta">
-                <img src="assets/media/imagenes/geoinformatica.jpg" alt="Licencitura 2"> <!-- Geomática -->
+                <img src="./assets/media/imagenes/geoinformatica.jpg" alt="Licencitura 2"> <!-- Geomática -->
                 <h3>Licenciatura en Geomática</h3>
                 <p>En México, las carreras de Geoinformática y Geomática surgieron para resolver problemas territoriales usando tecnologías geográficas en varias universidades nacionales. Animate a explorar el increíble mundo de la Geoinformática...</p>
                 <button>Leer más</button>
             </div>
             <div class="tarjeta">
-                <img src="assets/media/imagenes/geodesia.jpg" alt="Licencitura 3"> <!-- Geodésica -->
+                <img src="./assets/media/imagenes/geodesia.jpg" alt="Licencitura 3"> <!-- Geodésica -->
                 <h3>Licenciatura en Ingeniería Geodésica</h3>
                 <p>La Ingeniería Geodésica se adapta a cambios sociales y económicos, fortaleciendo vínculos entre sectores y formando profesionales para necesidades actuales.</p>
                 <button>Leer más</button>
@@ -381,19 +444,19 @@
         </div>
         <div class="fila">
             <div class="tarjeta">
-                <img src="assets/media/imagenes/eventos1.jpg" alt="Evento 1">
+                <img src="./assets/media/imagenes/eventos1.jpg" alt="Evento 1">
                 <h3>Lanzamiento de cohetes de agua</h3>
                 <p>El Club de Cohetería de la Facultad de Ciencias de la Tierra y el Espacio organizó un evento para el lanzamiento de cohetes de agua, este Este 31 de marzo, por parte de los alumnos de Astronomía se lleva…</p>
                 <button>Leer más</button>
             </div>
             <div class="tarjeta">
-                <img src="assets/media/imagenes/eventos2.jpg" alt="Evento 2">
+                <img src="./assets/media/imagenes/eventos2.jpg" alt="Evento 2">
                 <h3>13va Olimpiada Estatal de Astronomía 2023</h3>
                 <p>La facultad de Ciencias de la Tierra y el Espacio (FACITE) de la Universidad Autónoma de Sinaloa Fue sede de la 13va Olimpiada Estatal de Astronomía 2023, donde participaron un total de 56 alum…</p>
                 <button>Leer más</button>
             </div>
             <div class="tarjeta">
-                <img src="assets/media/imagenes/eventos3.jpg" alt="Evento 3">
+                <img src="./assets/media/imagenes/eventos3.jpg" alt="Evento 3">
                 <h3>Defensa de la tesis por parte de Dalia Abigail Sánchez López</h3>
                 <p>Este 30 de marzo, en el auditorio planetario de la Facultad de Ciencias de la Tierra y el Espacio, Dalia Abigail Sánchez López, realizó la presentación y defensas de la tesis “Análisis de calidad del agua …</p>
                 <button>Leer más</button>
@@ -470,13 +533,13 @@
     <footer>
         <div class="footer-container">
             <div class="logo-izquierda">
-                <img src="assets/media/Logos/CuadroconFondoUAS.png" alt="Logo UAS">
+                <img src="./assets/media/Logos/CuadroconFondoUAS.png" alt="Logo UAS">
             </div>
             <div class="footer-text">
                 <p>Sursum Versus</P>
              </div>
             <div class="logo-derecha">
-                <img src="assets/media/Logos/CuadroconFondo2025(Blanco).png" alt="Logo Visión UAS">
+                <img src="./assets/media/Logos/CuadroconFondo2025(Blanco).png" alt="Logo Visión UAS">
             </div>
         </div>
     </footer>       
@@ -504,7 +567,27 @@
             //==================Termina scrip de las pestañas==================
         </script>
           
-
+          <div class="BotonArriba">
+            <a href="#Arriba" id="BotonArriba">
+            <i class="fa-solid fa-circle-up fa-lg"></i>
+            </a>
+    
+            <a href="https://www.facebook.com/FACITE.UAS" target="_blank" id="Fb">
+            <i class="fa-brands fa-facebook"></i>
+            </a>
+    
+            <a href="#" id="Ig">
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+    
+            <a href="#" id="Tw">
+            <i class="fa-brands fa-twitter"></i>
+            </a>
+            
+            <a href="#" id="Wa">
+            <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
 </body>
 
 </html>
