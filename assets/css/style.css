@@ -433,7 +433,7 @@ a{
 
 /*=====Noticias, Servicios y Alumnos=====*/
 .contenedor-principal-pestanas {
-    width: 1200px;
+    width: auto;
     margin: 0 auto;
     display: flex;
     flex-direction: column; /* Pestanas arriba y contenido abajo */
