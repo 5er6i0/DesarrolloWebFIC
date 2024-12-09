@@ -628,7 +628,7 @@ a{
     align-items: center;
     text-align: center;
     padding: 20px 20px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     background-color: #123392;
     color: white;
 }
