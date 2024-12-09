@@ -701,6 +701,102 @@ footer {
     }
 }
 
+/* ===== Estilo pre-footer responsivo ===== */
+.pre-footer {
+    background-color: #123392;
+    padding: 1rem 0;
+    color: white;
+    margin: 0;
+    border-bottom: none;
+}
+
+.pre-footer-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en pantallas grandes */
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.pre-footer-section h4 {
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.pre-footer-section p,
+.pre-footer-section a {
+    font-size: 0.9rem;
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+
+.pre-footer-section a:hover {
+    color: #ffd700;
+}
+
+/* ===== Media Queries para Responsividad ===== */
+
+/* En pantallas medianas (tabletas), usa dos columnas */
+@media (max-width: 1024px) {
+    .pre-footer-info {
+        grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
+    }
+
+    .pre-footer-section h4 {
+        font-size: 1.1rem;
+    }
+
+    .pre-footer-section p,
+    .pre-footer-section a {
+        font-size: 1rem;
+    }
+}
+
+/* En pantallas pequeñas (móviles), usa una sola columna */
+@media (max-width: 768px) {
+    .pre-footer-info {
+        grid-template-columns: 1fr; /* Una sola columna */
+        text-align: center;
+    }
+
+    .pre-footer-section {
+        margin-bottom: 1rem;
+    }
+
+    .pre-footer-section h4 {
+        font-size: 1rem;
+    }
+
+    .pre-footer-section p,
+    .pre-footer-section a {
+        font-size: 0.9rem;
+    }
+
+    iframe {
+        max-width: 100%; /* Asegura que el mapa no se desborde */
+        height: auto;
+    }
+}
+
+/* Ajustes adicionales para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .pre-footer-section h4 {
+        font-size: 0.9rem;
+    }
+
+    .pre-footer-section p,
+    .pre-footer-section a {
+        font-size: 0.8rem;
+    }
+
+    .pre-footer-info {
+        padding: 0 0.5rem;
+    }
+}
+
 /*=====Estilo responsivo para header=====*/
 @media (max-width: 800px){
     header, .NombreUAS, nav, .navMenu{
