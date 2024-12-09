@@ -84,7 +84,8 @@ header {
     margin: 0;
     display: flex;
     height: 30px;
-    letter-spacing: 1vw;
+    letter-spacing: 2vw;
+    overflow: hidden;
 }
 .NombreUAS h4{
     display: flex;
@@ -92,10 +93,12 @@ header {
     color: #B8C7E6;
     padding: 0;
     margin: 2px;
-    margin-left: 30vw;
+    margin-left: 19vw;
     font-size: 18px;
     font-weight: 300;
     z-index: 15;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .NombreFacultad {
     position: absolute;
