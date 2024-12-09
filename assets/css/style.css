@@ -86,7 +86,7 @@ header {
     justify-content: space-around;
     align-items: center;
     height: 30px;
-    letter-spacing: 10px;
+    letter-spacing: 13px;
 }
 .NombreUAS h4{
     font-family: "Roboto Condensed", sans-serif;
@@ -94,14 +94,14 @@ header {
     padding: 0;
     color: #B8C7E6;
     font-size: 18px;
-    font-weight: 250;
+    font-weight: 300;
 }
 .NombreFacultad {
     position: absolute;
     margin: auto;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 24px;
-    left: 26%;
+    left: 25%;
     text-align: right;
     color: white;
     z-index: 20;
@@ -441,18 +441,19 @@ a{
     gap: 20px;
     flex-wrap: wrap;
 }
+
 .tarjeta {
     background: white;
     border-radius: 8px;
     max-width: 25%;
     max-height: 450px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: justify; /* Justifica el contenido de la tarjeta */
     padding: 20px;
     flex: 1;
     overflow: hidden; /*Evita que el texto se desborde*/
 }
-
+ 
 .tarjeta img {
     width: 100%;
     max-height: 200px;
@@ -470,10 +471,12 @@ a{
     color: #666;
     overflow: hidden;
     text-overflow: ellipsis; /*agrega ...*/
+	text-align: justify; /* Asegurándonos de que los párrafos estén justificados */
     display: -webkit-box;
     -webkit-line-clamp: 3; /*numero de líneas*/
     -webkit-box-orient: vertical;
 }
+
 
 .tarjeta button {
     margin-top: 0;
@@ -483,7 +486,9 @@ a{
     background: #123392;
     border: none;
     border-radius: 4px;
+	float: right; /* Alinea el botón a la derecha */
 }
+
 .tarjeta button:hover {
     background:#c49e0d;
 }
@@ -687,7 +692,7 @@ footer {
 
 /*=====Estilo responsivo header=====*/
 
-@media (max-width:1030px) {
+@media (max-width: 800px) {
     .col-img {
         display: none;
     }
@@ -697,7 +702,7 @@ footer {
 }
 
 /*=====Estilo responsivo para header=====*/
-@media (max-width: 1024px){
+@media (max-width: 800px){
     header, .NombreUAS, nav, .navMenu{
         display: none;
     }
