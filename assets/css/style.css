@@ -101,11 +101,11 @@ header {
     white-space: nowrap;
 }
 .NombreFacultad {
-    position: absolute;
+    position: relative;
     margin: auto;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 24px;
-    left: 23vb;
+    left: 21rcap;
     text-align: left;
     color: white;
     z-index: 20;
