@@ -85,29 +85,28 @@ header {
     display: flex;
     width: 100%;
     height: 30px;
-    letter-spacing: 2vw;
-    overflow: hidden;
+    align-items: center;
 }
 .NombreUAS h4{
-    display: flex;
-    text-align: center;
     font-family: "Roboto Condensed", sans-serif;
     color: #B8C7E6;
     padding: 0;
-    margin: 5px 0;
-    margin-left: 21vw;
+    margin: 0;
     font-size: 16px;
     font-weight: 300;
     z-index: 15;
-    overflow:hidden;
+    overflow: hidden;
     white-space: nowrap;
+    text-overflow: ellipsis;
+    letter-spacing: 1.6vw;
+    margin-left: 20vw;
 }
 .NombreFacultad {
     position: relative;
     margin: auto;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 24px;
-    left: 21rcap;
+    left: 19rcap;
     text-align: left;
     color: white;
     z-index: 20;
