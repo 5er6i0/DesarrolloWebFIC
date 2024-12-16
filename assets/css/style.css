@@ -42,11 +42,13 @@ header {
     color: white;
     width: 100%;
 }
+
 .line {
     border-top: 4px solid #b89d2b;
     width: 100%;
     max-width: 300px;
     margin-bottom: 5px;
+    margin: 0 auto;
 }
 
 /*=====Estilo de logos y facultad=====*/
@@ -745,6 +747,7 @@ footer {
     color: white;
     margin: 0;
     border-bottom: none;
+    text-align: center;
 }
 
 .contacto h2 {
