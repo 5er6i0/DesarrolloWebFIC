@@ -781,6 +781,12 @@ footer {
 .contacto-section a:hover {
     color: #ffd700;
 }
+@media (max-width: 768px) {
+    .contacto-info {
+        grid-template-columns: 1fr; /* Una columna en dispositivos pequeños */
+        text-align: center;
+    }
+}
 
 /* ===== Media Queries para Responsividad ===== */
 
