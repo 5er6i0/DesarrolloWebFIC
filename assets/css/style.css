@@ -735,7 +735,7 @@ footer {
     font-size: 18px;
     letter-spacing: 5px;
     padding: 0px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 /*=====Estilo responsivo header=====*/
@@ -1030,11 +1030,11 @@ footer {
     font-size: 14px;
     }
     .form-group textarea {
-    resize: none;
+    resize: vertical;
     }
     .submit-button {
-    background-color: #ffcc00;
-    color: #000;
+    background-color: #b89d2b;
+    color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -1042,5 +1042,5 @@ footer {
     cursor: pointer;
     }
     .submit-button:hover {
-    background-color: #e6b800;
+    background-color: #806e1e;
     }
