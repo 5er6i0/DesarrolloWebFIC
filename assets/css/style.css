@@ -20,6 +20,10 @@ Color: white
     color: #1d71b8;
 }
 
+.fondo-azul {
+    background-color: #003595;
+}
+
 body {
     font-family: "Roboto Condensed", sans-serif;
     margin: 0;
