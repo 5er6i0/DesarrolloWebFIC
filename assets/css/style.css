@@ -1041,6 +1041,7 @@ footer {
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 460px;
     }
     .submit-button:hover {
     background-color: #806e1e;
