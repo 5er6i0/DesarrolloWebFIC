@@ -1031,6 +1031,7 @@ footer {
     }
     .form-group textarea {
     resize: vertical;
+    min-height: 100px;
     }
     .submit-button {
     background-color: #b89d2b;
